@@ -9,36 +9,35 @@ class Program
 
         string? line;
         List<int> num = new List<int>();
-        
+        string [] numbers = new string;  
         int safe = 0;
         int diff = 0;
-        
+
         while ((line = sr.ReadLine()) != null)
         {
+            numbers = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-            string[] numbers = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
-            
-            num.Append(numbers[0])
-            
-
-            for (int i = 1; i < numbers.Length; i++)
-            {
-                diff = int.Parse(numbers[i])-num[i-1] ;
-                if(diff >= 1 && diff <= 3){
-                    num.Add(int.Parse(numbers[i]));
-                }
-                else
-                {
-                    break;
-                }
+            if(checkSafe(numbers)){
+               safe++; 
             }
-                if(diff >= 1 && diff <= 3){
-                   safe++; 
-                }
-            num.Clear();
+            numbers.Clear();
         }
 
         Console.WriteLine($"Safe is {safe}");
+    }
+
+    static bool checkSafe(string [] chaine){
+        Console.WriteLine($"Safe --> {chaine[0]}");
+        int pre = int.Parse(chaine[0]);
+        int diff = 0;
+        for (string n in chaine[1:])
+        {
+            diff = int.Parse(n)-pre;
+            if(diff < 1 || diff > 3){
+                return false;
+            }
+            pre = int.Parse(n);
+        }
+        return true;
     }
 }
