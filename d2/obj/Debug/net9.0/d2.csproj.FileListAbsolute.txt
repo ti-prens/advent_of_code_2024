@@ -1,0 +1,15 @@
+C:\Users\Prince\Documents\aoc_2024\d2\bin\Debug\net9.0\d2.exe
+C:\Users\Prince\Documents\aoc_2024\d2\bin\Debug\net9.0\d2.deps.json
+C:\Users\Prince\Documents\aoc_2024\d2\bin\Debug\net9.0\d2.runtimeconfig.json
+C:\Users\Prince\Documents\aoc_2024\d2\bin\Debug\net9.0\d2.dll
+C:\Users\Prince\Documents\aoc_2024\d2\bin\Debug\net9.0\d2.pdb
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\d2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\d2.AssemblyInfoInputs.cache
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\d2.AssemblyInfo.cs
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\d2.csproj.CoreCompileInputs.cache
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\d2.sourcelink.json
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\d2.dll
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\refint\d2.dll
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\d2.pdb
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\d2.genruntimeconfig.cache
+C:\Users\Prince\Documents\aoc_2024\d2\obj\Debug\net9.0\ref\d2.dll
