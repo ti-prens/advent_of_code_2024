@@ -1,20 +1,52 @@
 ﻿// See https://aka.ms/new-console-template for more information
-class Program {
-    static void Main(){
+// using System.IO;
+class Program
+{
+    static void Main()
+    {
         Console.WriteLine("I am running");
+        int part = 1;
+        part = 2;
+        List<int> ll = new List<int> {};
+        List<int> lr = new List<int> {};
 
-        List<int> ll = new List<int> {1,2,3,4,5};
-        List<int> lr = new List<int> {1,3,5,7,9};
-        
-        ll.Sort();
-        lr.Sort();
+        StreamReader sr = new StreamReader("d1_test.txt");
+        sr = new StreamReader("d1_input.txt");
+        String? line = sr.ReadLine();
+
+
+        ll.Clear();
+        lr.Clear();
 
         int distance = 0;
-
-        for(int i =0;i<ll.Count;i++){
-            distance += Math.Abs(ll[i]-lr[i]);
+        
+        while (line != null)
+        {
+            String[] temp = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            ll.Add(int.Parse(temp[0]));
+            lr.Add(int.Parse(temp[1]));
+            // Console.WriteLine($"line is {line} \n line split are : {line.Split("   ")[1]}");
+            line = sr.ReadLine();
         }
+        if (part == 1)
+        {
 
+            ll.Sort();
+            lr.Sort();
+
+
+            for (int i = 0; i < ll.Count; i++)
+            {
+                distance += Math.Abs(ll[i] - lr[i]);
+            }
+
+        }
+        else
+        {
+            for (int i = 0; i< ll.Count;i++){
+                distance += lr.Count(x => x == ll[i]) * ll[i];
+            }
+        }
         Console.WriteLine($"Distance = {distance}");
     }
 }

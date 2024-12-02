@@ -12,3 +12,4 @@ C:\Users\Prince\Documents\aoc_2024\d1\obj\Debug\net9.0\refint\d1.dll
 C:\Users\Prince\Documents\aoc_2024\d1\obj\Debug\net9.0\d1.pdb
 C:\Users\Prince\Documents\aoc_2024\d1\obj\Debug\net9.0\d1.genruntimeconfig.cache
 C:\Users\Prince\Documents\aoc_2024\d1\obj\Debug\net9.0\ref\d1.dll
+C:\Users\Prince\Documents\aoc_2024\d1\obj\Debug\net9.0\d1.sourcelink.json
