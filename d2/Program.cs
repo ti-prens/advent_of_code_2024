@@ -36,24 +36,24 @@ class Program
         int pre = int.Parse(chaine[0]);
         Console.WriteLine($"pre value {pre}");
 
-        int diff = int.Parse(chaine[1]) - pre;
-        if(diff == 0) return false;
-        int sign = diff/diff;
-        Console.WriteLine($"the sign is {sign}");
-        
+        int pre_diff = int.Parse(chaine[1]) - pre;
+
         for(int i =1 ; i<chaine.Length; i++)
         {
             Console.WriteLine($"-> the {i} iemme number of chaine is : {int.Parse(chaine[i])}");
-            diff = int.Parse(chaine[i]) - pre;
-            Console.WriteLine($"the diff is {diff}");
-            if(diff == 0 || sign != diff/diff ){
+            int diff = int.Parse(chaine[i]) - pre;
+            if((diff < 0 && pre_diff > 0) || (diff > 0 && pre_diff < 0)){
                 return false;
             }
-            diff = Math.Abs(diff);
-            if (diff < 1 || diff > 3)
+            pre_diff = diff;
+            Console.WriteLine($"the diff is {diff}");
+            
+            
+            if (Math.Abs(diff) < 1 || Math.Abs(diff) > 3)
             {
                 return false;
             }
+
             pre = int.Parse(chaine[i]);
 
         }
